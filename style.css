@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+.container {
+  padding: 0px 60px;
+}
+.firstview-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 140px;
+  padding-bottom: 130px;
+}
+
+.first-left p {
+  color: rgb(86, 84, 84);
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.first-left h1 {
+  font-size: 47px;
+}
+
+.firstview img {
+  height: 220px;
+  width: auto;
+}
+
+.bosyuu {
+  background-color: rgb(34, 34, 34);
+  padding: 70px 0px;
+}
+.bosyuu h2 {
+  font-size: 27px;
+  color: #fff;
+  padding: 35px 0px;
+  border-top: 1px solid rgb(82, 82, 82);
+}
+.bosyuu-inner {
+  display: flex;
+  gap: 35px;
+}
+.numbers {
+  background-color: rgb(74, 70, 70);
+  width: 500px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 35px;
+  margin-bottom: 70px;
+}
+.numbers h3 {
+  color: rgb(247, 47, 47);
+  font-size: 22px;
+}
+.numbers h4 {
+  font-size: 22px;
+  color: #fff;
+}
+.numbers p {
+  color: rgb(180, 180, 179);
+}
+
+.oubo {
+  display: flex;
+  padding: 28px 0;
+  border-bottom: 1px solid rgb(82, 82, 82);
+}
+.oubo1 {
+  padding-top: 0px;
+}
+.oubo2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.oubo p {
+  color: rgb(180, 180, 179);
+  width: 250px;
+}
+
+.oubo h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.foot {
+  background-color: rgb(34, 34, 34);
+  padding: 35px 0px;
+}
+
+.foot h2 {
+  color: #d6d6d6;
+  font-size: 22px;
+}
+
+.foot p {
+  color: #d6d6d6;
+  padding-top: 19px;
+  font-size: 16px;
+}
