@@ -9,6 +9,47 @@
   padding: 0px 60px;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 90px;
+  border-bottom: 1px solid #d7d4d4;
+}
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-right: 110px;
+}
+
+.marqueer {
+  margin-top: 140px;
+  overflow: hidden;
+}
+
+.marqueer ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+}
+
+.navigation a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.marqueer ul li {
+  list-style: none;
+  padding: 0 11px;
+  width: calc(100vw / 3-10px);
+}
+.marqueer img {
+  display: block;
+  width: auto;
+  height: 280px;
+}
 .firstview-inner {
   display: flex;
   justify-content: space-between;
