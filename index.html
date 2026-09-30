@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOCAL AWARD</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="js/isotope.pkgd.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="navigation">
-<ul>
-  <li><a href="#bosyuu">募集要項</a></li>
-  <li><a href="">過去受賞作品</a></li>
-  <li><a href="">応募する</a></li>
-  
-</ul>
-
+      <div>
+        <h1>LOCAL AWARD</h1>
+      </div>
+      <ul>
+        <li><a href="#bosyuu">募集要項</a></li>
+        <li><a href="">過去受賞作品</a></li>
+        <li class="redbox"><a href="">応募する</a></li>
+      </ul>
     </header>
     <section class="slider">
       <div class="container">
@@ -83,63 +85,71 @@
       </div>
     </section>
     <section>
-      <h2>過去受賞作品</h2>
-      <a href="">すべて</a>
-      <a href="">魅力発信</a>
-      <a href="">防災安全</a>
-      <a href="">環境</a>
-      <div>
-        <img src="img/thumbnail-05.webp" alt="" />
-        <p>魅力発信</p>
-        <h3>地元の祭りを紹介する2分間のショート映像</h3>
-        <p>中学1年・東美咲</p>
+      <div class="container">
+        <h2>過去受賞作品</h2>
+        <ul class="filter">
+          <li><a href="" data-filter="*" class="active">すべて</a></li>
+          <li><a href="" data-filter=".filter1">魅力発信</a></li>
+          <li><a href="" data-filter=".filter2">防災安全</a></li>
+          <li><a href="" data-filter=".filter3">環境</a></li>
+        </ul>
+        <ul class="grid">
+          <li class="grid-item filter1 another">
+            <img src="img/thumbnail-05.webp" alt="" />
+            <h4>魅力発信</h4>
+            <h3>地元の祭りを紹介する2分間のショート映像</h3>
+            <p>中学1年・東美咲</p>
+          </li>
+          <li class="grid-item filter1">
+            <img src="img/thumbnail-06.webp" alt="" />
+            <h4>魅力発信</h4>
+            <h3>駅前観光マップのリデザイン</h3>
+            <p>中学2年・林さくら</p>
+          </li>
+          <li class="grid-item filter1">
+            <img src="img/thumbnail-07.webp" alt="" />
+            <h4>魅力発信</h4>
+            <h3>シャッター商店街を案内図に変えるポスター</h3>
+            <p>高校2年・佐野陽菜</p>
+          </li>
+          <li class="grid-item filter2">
+            <img src="img/thumbnail-08.webp" alt="" />
+            <h4>防災安全</h4>
+            <h3>通学路の危険個所をまとめた防災マップ</h3>
+            <p>高校3年・岩本直樹</p>
+          </li>
+          <li class="grid-item filter2">
+            <img src="img/thumbnail-09.webp" alt="" />
+            <h4>防災安全</h4>
+            <h3>避難所の場所が遠くからわかる誘導看板</h3>
+            <p>高校1年・森田悠人</p>
+          </li>
+          <li class="grid-item filter2">
+            <img src="img/thumbnail-10.webp" alt="" />
+            <h4>防災安全</h4>
+            <h3>高齢者に配る緊急連絡カードのデザイン</h3>
+            <p>高校3年・川口千夏</p>
+          </li>
+          <li class="grid-item filter3">
+            <img src="img/thumbnail-04.webp" alt="" />
+            <h4>環境</h4>
+            <h3>給食の食べ残しを減らす啓発ポスター</h3>
+            <p>高校2年・宮下蓮</p>
+          </li>
+          <li class="grid-item filter3">
+            <img src="img/thumbnail-01.webp" alt="" />
+            <h4>環境</h4>
+            <h3>海岸のゴミ拾いを1年記録した映像</h3>
+            <p>中学3年・大村優</p>
+          </li>
+          <li class="grid-item filter3">
+            <img src="img/thumbnail-02.webp" alt="" />
+            <h4>環境</h4>
+            <h3>分別方法をすぐ調べられるWebサイト</h3>
+            <p>中学2年・藤井湊</p>
+          </li>
+        </ul>
       </div>
-      <div>
-        <img src="img/thumbnail-06.webp" alt="" />
-        <p>魅力発信</p>
-        <h3>駅前の観光マップのリデザイン</h3>
-        <p>中学2年・林さくら</p>
-      </div>
-      <div>
-        <img src="img/thumbnail-07.webp" alt="" />
-        <p>魅力発信</p>
-        <h3>シャッター商店街を案内図に帰るポスター</h3>
-        <p>高校2年・佐野陽菜</p>
-      </div>
-      <div>
-        <img src="img/thumbnail-08.webp" alt="" />
-        <p>防災安全</p>
-        <h3>通学路の危険個所をまとめた防災マップ</h3>
-        <p>高校3年・岩本直樹</p>
-      </div>
-      <div>
-        <img src="img/thumbnail-09.webp" alt="" />
-        <p>防災安全」</p>
-        <h3>避難所の場所が遠くからわかる誘導看板</h3>
-        <p>高校1年・森田悠人</p>
-      </div>
-      <div>
-        <img src="img/thumbnail-10.webp" alt="" />
-        <p>防災安全</p>
-        <h3>高齢者に配る緊急連絡カードのデザイン</h3>
-        <p>高校3年・川口千夏</p>
-      </div>
-      <div>
-        <img src="img/thumbnail-04.webp" alt="" />
-        <p>環境</p>
-        <h3>給食の食べ残しを減らす啓発ポスター</h3>
-        <p>高校2年・宮下連</p>
-      </div>
-      <div>
-        <img src="img/thumbnail-01.webp" alt="" />
-        <p>環境</p>
-        <h3>海岸のゴミ拾いを1年間記録した映像</h3>
-        <p>中学3年・大村優</p>
-      </div>
-      <img src="img/thumbnail-02.webp" alt="" />
-      <p>環境</p>
-      <h3>分別方法をすぐ調べられるWebサイト</h3>
-      <p>中学2年・藤井湊</p>
     </section>
     <footer class="foot">
       <div class="container">

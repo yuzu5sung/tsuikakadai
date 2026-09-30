@@ -11,16 +11,31 @@
 
 .navigation {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   height: 90px;
   border-bottom: 1px solid #d7d4d4;
 }
+.navigation h1 {
+  display: flex;
+}
 .navigation ul {
   display: flex;
+
   list-style: none;
   gap: 50px;
-  margin-right: 110px;
+  margin-right: 90px;
+}
+.navigation a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.redbox {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 46, 46);
+  width: 120px;
+  height: 50px;
 }
 
 .marqueer {
@@ -33,11 +48,6 @@
   margin: 0;
   padding: 0;
   width: max-content;
-}
-
-.navigation a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
 }
 
 .marqueer ul li {
@@ -129,7 +139,38 @@
   font-size: 18px;
   color: #fff;
 }
-
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 33%;
+  
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.grid img {
+  width: 300px;
+  height: 100%;
+}
+.another img {
+  width: 100%;
+  height: 670px;
+  object-fit: cover;
+}
+.grid h4 {
+  font-size: 16px;
+  color: rgb(239, 50, 50);
+}
+.grid h3 {
+  font-size: 22px;
+}
+.grid p {
+  font-size: 15.5px;
+}
 .foot {
   background-color: rgb(34, 34, 34);
   padding: 35px 0px;

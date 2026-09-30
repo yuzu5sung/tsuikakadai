@@ -24,3 +24,23 @@ window.addEventListener("load", function () {
 
   animate();
 });
+
+$(function () {
+  var $grid = $(".grid").isotope({
+    itemSelector: ".grid-item",
+    masonry: {
+      columnWidth: 200,
+    },
+  });
+
+  $(".filter a").click(function () {
+    $(".filter .active").removeClass("active");
+    $(this).addClass("active");
+
+    var elem = $(this).attr("data-filter");
+    $grid.isotope({
+      filter: elem,
+    });
+    return false;
+  });
+});
