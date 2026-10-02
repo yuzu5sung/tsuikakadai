@@ -1,4 +1,3 @@
-
 window.addEventListener("load", function () {
   const marquee = document.querySelector(".marqueer ul"); // ul要素
   const items = Array.from(marquee.children); // 子要素
@@ -30,11 +29,11 @@ $(function () {
   var $grid = $(".grid").isotope({
     itemSelector: ".grid-item",
     masonry: {
-      columnWidth: 200,
+      columnWidth: ".grid-item:not(.another)",
     },
   });
 
-  $(".filter a").click(function () {
+  $(".filter a").click(function (e) {
     e.preventDefault();
     $(".filter .active").removeClass("active");
     $(this).addClass("active");
@@ -46,3 +45,4 @@ $(function () {
     return false;
   });
 });
+
