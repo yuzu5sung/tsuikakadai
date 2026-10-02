@@ -1,3 +1,4 @@
+
 window.addEventListener("load", function () {
   const marquee = document.querySelector(".marqueer ul"); // ul要素
   const items = Array.from(marquee.children); // 子要素
@@ -9,7 +10,7 @@ window.addEventListener("load", function () {
 
   let marqueeWidth = marquee.scrollWidth / 2;
   let pos = direction === "left" ? 0 : -marqueeWidth;
-  const pixelsPerFrame = marqueeWidth / (speedSeconds * 50);
+  const pixelsPerFrame = marqueeWidth / (speedSeconds * 60);
 
   function animate() {
     pos += direction === "left" ? -pixelsPerFrame : pixelsPerFrame;
@@ -34,6 +35,7 @@ $(function () {
   });
 
   $(".filter a").click(function () {
+    e.preventDefault();
     $(".filter .active").removeClass("active");
     $(this).addClass("active");
 
