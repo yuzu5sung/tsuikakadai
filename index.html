@@ -8,6 +8,12 @@
       property="og:description"
       content="中学生・高校生が地域の課題解決に挑むLOCAL AWARD。魅力発信・防災安全・環境の3部門で作品を募集。応募無料、2026年11月30日締切。"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.webp" />
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
@@ -17,7 +23,7 @@
   </head>
   <body>
     <header>
-      <div class="navigation container">
+      <div class="navigation">
         <div>
           <h1>LOCAL AWARD</h1>
         </div>
@@ -25,21 +31,28 @@
           <li class="normal"><a href="#bosyuu">募集要項</a></li>
           <li class="normal"><a href="#photos">過去受賞作品</a></li>
           <li class="redbox"><a href="">応募する</a></li>
-          <li><img src="img/menu.svg" alt="" class="menu-btn" /></li>
+          <li class="menu-btn"><img src="img/menu.svg" alt="" /></li>
         </ul>
+        <nav class="menu">
+          <ul>
+            <img src="img/close.svg" alt="" class="menu-img" />
+            <div class="menu-box">
+            <li class="menu-word"><a href="#bosyuu">募集要項</a></li>
+            <li class="menu-word"><a href="#photos">過去受賞作品 </a></li>
+            </div>
+          </ul>
+        </nav>
       </div>
     </header>
     <section class="slider">
-      <div class="container">
-        <div class="marqueer">
-          <ul>
-            <li><img src="img/thumbnail-01.webp" alt="" /></li>
-            <li><img src="img/thumbnail-02.webp" alt="" /></li>
-            <li><img src="img/thumbnail-03.webp" alt="" /></li>
-            <li><img src="img/thumbnail-04.webp" alt="" /></li>
-            <li><img src="img/thumbnail-05.webp" alt="" /></li>
-          </ul>
-        </div>
+      <div class="marqueer container">
+        <ul>
+          <li><img src="img/thumbnail-01.webp" alt="" /></li>
+          <li><img src="img/thumbnail-02.webp" alt="" /></li>
+          <li><img src="img/thumbnail-03.webp" alt="" /></li>
+          <li><img src="img/thumbnail-04.webp" alt="" /></li>
+          <li><img src="img/thumbnail-05.webp" alt="" /></li>
+        </ul>
       </div>
     </section>
     <section class="firstview">

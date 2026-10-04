@@ -1,3 +1,19 @@
+$(function () {
+  $(".menu-btn").click(function () {
+    $(".menu").toggleClass("open");
+    $(this).toggleClass("active");
+  });
+  $(".menu-img").click(function () {
+    $(".menu").removeClass("open");
+    $(".menu-btn").removeClass("active");
+  });
+
+  $(".menu-word a").click(function () {
+    $(".menu").removeClass("open");
+    $(".menu-btn").removeClass("active");
+  });
+});
+
 window.addEventListener("load", function () {
   const marquee = document.querySelector(".marqueer ul"); // ul要素
   const items = Array.from(marquee.children); // 子要素
@@ -28,8 +44,10 @@ window.addEventListener("load", function () {
 $(function () {
   var $grid = $(".grid").isotope({
     itemSelector: ".grid-item",
+    layoutMode: "fitRows",
     masonry: {
       columnWidth: ".grid-item:not(.another)",
+      // gutter: 10,
     },
   });
 
@@ -45,4 +63,3 @@ $(function () {
     return false;
   });
 });
-
