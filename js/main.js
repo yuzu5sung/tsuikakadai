@@ -45,12 +45,15 @@ $(function () {
   var $grid = $(".grid").isotope({
     itemSelector: ".grid-item",
     layoutMode: "fitRows",
-    masonry: {
-      columnWidth: ".grid-item:not(.another)",
-      // gutter: 10,
-    },
+    // masonry: {
+    //   columnWidth: ".grid-item:not(.another)",
+    //   gutter: 10,
+    // },
   });
-
+  $(window).on("load", function () {
+    $grid.isotope("layout");
+  });
+  
   $(".filter a").click(function (e) {
     e.preventDefault();
     $(".filter .active").removeClass("active");
